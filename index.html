@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Button</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Title and Paragraph -->
+        <h1>Welcome to Our Website!</h1>
+        <p>This website provides exciting content and tools. Click the button below to explore more!</p>
+        
+        <!-- Styled Button -->
+        <button class="cadre-button" id="createKeyBtn" aria-label="Create a Key">
+            <i class="fas fa-key"></i> Create Key
+        </button>
+        
+        <!-- Loading Spinner -->
+        <div class="loading-spinner" id="loadingSpinner"></div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <p>Are you sure you want to create a key?</p>
+            <button id="confirmBtn">Yes</button>
+            <button id="cancelBtn">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
